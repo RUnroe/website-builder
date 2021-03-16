@@ -13,5 +13,6 @@ app.use(express.static(path.join(__dirname+"/public")));
 
 
 app.get("/", routes.index);
+app.get("/edit", routes.edit);
 
 app.listen(3000);

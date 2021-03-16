@@ -1,13 +1,15 @@
 doctype html
 html
     head
-        link(href="/style.css", rel="stylesheet")
+        link(href="/styles/style.css", rel="stylesheet")
         meta(name="viewport" content="width=device-width, initial-scale=1")
         link(href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet")
+        block head
     body
         header
             nav
                 a(href="/") Home
-        section(id="main_section")
+                a(href="/edit") Edit
+        section(id="mainSection")
             block content
         footer Ryan Unroe
